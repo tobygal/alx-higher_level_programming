@@ -5,7 +5,7 @@ Square Class Module
 
 
 class Square:
-    """Represent a Square."""
+    """Defines a Square."""
 
     def __init___(self, size):
         """Initalize a new Square.
