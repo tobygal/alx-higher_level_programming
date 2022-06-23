@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-This module defines a Square Class Module
-"""
+""" Square module """
 
 
 class Square:
