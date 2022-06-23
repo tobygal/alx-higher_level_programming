@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-This module defines and initializes a square class.
+This module defines a square class and initializes its size.
 '''
 
 
