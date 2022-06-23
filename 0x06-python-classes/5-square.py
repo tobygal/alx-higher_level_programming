@@ -6,9 +6,14 @@ This module defines and initializes a square class.
 
 class Square:
     '''
-    Square initialization.
+    Square representation.
     '''
     def __init__(self, size=0):
+        '''
+        Initialization of a square.
+        Args:
+            size (int): The size of the new square.
+        '''
         self.__size = size
 
     @property
@@ -24,6 +29,8 @@ class Square:
     self.__size = size
 
     def area(self):
+        ''' Calculates the area of the square.
+        '''
         return (self.__size ** 2)
 
     def my_print(self):
