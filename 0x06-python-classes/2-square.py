@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-This module defines and initalizes a square class.
+Define a Square class.
 '''
 
 
@@ -10,9 +10,9 @@ class Square:
     '''
     def __init__(self, size=0):
         '''
-        Initialization of the size of square of type int.
+        Initialization of a new Square.
         Args:
-            size of type int
+            size (int): The size of the new square.
         '''
     if type(size) != int:
         raise TypeError('size must be an integer')
