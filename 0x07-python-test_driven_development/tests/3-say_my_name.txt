@@ -1,0 +1,56 @@
+The ``3-say_my_name`` module
+========================
+
+Using ``say_my_name``
+--------------------
+
+Importing the function from the module:
+	>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+Check for module docstring:
+	>>> m = __import__("3-say_my_name").__doc__
+	>>> len(m) > 1
+	True
+
+Check for function docstring:
+	>>> f = __import__("3-say_my_name").say_my_name.__doc__
+	>>> len(f) > 1
+	True
+
+Check for type error for first name:
+	>>> say_my_name(1, "Doe")
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+Check for type error for last name:
+	>>> say_my_name("Jane", [5])
+	Traceback (most recent call last):
+	...
+	TypeError: last_name must be a string
+
+Check for None as first name:
+	>>> say_my_name(None, "Doe")
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+Check for None as last name:
+	>>> say_my_name("Jane", None)
+	Traceback (most recent call last):
+	...
+	TypeError: last_name must be a string
+
+Check for correct format:
+	>>> say_my_name("Jane", "Doe")
+	My name is Jane Doe
+
+Check for 1 argument:
+	>>> say_my_name("Jane")
+	My name is Jane
+
+Check for more than 2 argument:
+	>>> say_my_name("Jane", "Doe", "Smith")
+	Traceback (most recent call last):
+	...
+	TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
