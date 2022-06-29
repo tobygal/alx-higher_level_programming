@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module describes a rectangle based on 0-rectangle.py
+This module describes a rectangle based on 0-rectangle.py.
 """
 
 
@@ -32,5 +32,5 @@ class Rectangle:
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         elif value < 0:
-            raisei ValueError("height must be >= 0")
+            raise ValueError("height must be >= 0")
         self.__height = value
