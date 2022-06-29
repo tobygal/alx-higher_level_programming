@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module describes a rectangle based on 0-rectangle.py.
+This module describes a rectangle based on 0-rectangle.py
 """
 
 
