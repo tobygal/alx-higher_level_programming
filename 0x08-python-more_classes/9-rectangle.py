@@ -42,7 +42,7 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         return cls(size, size)
-    
+
     def area(self):
         """This method retuns the area of a rectangle"""
         return (self.__width * self.__height)
