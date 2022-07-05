@@ -14,10 +14,10 @@ class Student:
     def to_json(self, attrs=None):
         """retrive dictionary"""
         if attrs is not None and all(isinstance(y, str) for y in attrs):
-            l = {}
+            L = {}
             for m, n in self.__dict__.items():
                 if m in attrs:
-                    l[m] = n
-            return l
+                    L[m] = n
+            return L
         else:
             return self.__dict__
