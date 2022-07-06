@@ -21,6 +21,7 @@ class Student:
             return L
         else:
             return self.__dict__
+
     def reload_from_json(self, json):
         """replace all attributes"""
         for (key, value) in json.items():
