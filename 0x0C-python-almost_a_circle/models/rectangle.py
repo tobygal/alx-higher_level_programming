@@ -18,6 +18,10 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    def __str__(self) -> str:
+        """ string representation"""
+        return "[Rectangle] ({}) {}/{} - {}/{}" \
+                .format(self.id, self.x, self.y, self.width, self.height)
     @property
     def width(self):
         return self.__width
@@ -48,7 +52,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError("x must be an integer")
         elif x < 0:
             raise ValueError("x must be >= 0")
