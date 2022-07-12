@@ -20,8 +20,9 @@ class Rectangle(Base):
 
     def __str__(self) -> str:
         """ string representation"""
-        return "[Rectangle] ({}) {}/{} - {}/{}" \
-                .format(self.id, self.x, self.y, self.width, self.height)
+        return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}" \
+            .format(self.id, self.x, self.y, self.width, self.height)
+
     @property
     def width(self):
         return self.__width
