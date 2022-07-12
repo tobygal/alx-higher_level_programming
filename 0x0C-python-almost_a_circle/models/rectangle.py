@@ -77,3 +77,6 @@ class Rectangle(Base):
         """y setter"""
         self.check_value_type('y', y, True)
         self.__y = y
+
+    def area(self):
+        return (self.__height * self.__width)
