@@ -65,7 +65,7 @@ class Rectangle(Base):
     def x(self, x: int):
         """x setter"""
         self.check_value_type('x', x, True)
-        self.__x = value
+        self.__x = x
 
     @property
     def y(self) -> int:
@@ -76,4 +76,4 @@ class Rectangle(Base):
     def y(self, y: int):
         """y setter"""
         self.check_value_type('y', y, True)
-        self.__y = value
+        self.__y = y
