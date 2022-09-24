@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""using urlerror handling in a urllib python script"""
+"""this script accepts a url as a param, sends a reuest to the url
+and displays the response body in utf-8 format using urlerror
+handling in a urllib python script"""
 
 
 import sys
